@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تهنئة فخمة لزينب بمناسبة رأس السنة الميلادية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --secondary-gold: #FFA500;
+            --dark-bg: #0a0a1f;
+            --light-bg: #1a1a3a;
+            --accent-pink: #e91e63;
+            --accent-purple: #9c27b0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Naskh Arabic', 'Cairo', serif;
+            background: linear-gradient(135deg, var(--dark-bg), #151530, var(--dark-bg));
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+            position: relative;
+        }
+
+        .decorative-border {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), var(--accent-pink), var(--primary-gold), transparent);
+            margin: 30px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .main-title {
+            font-size: 5.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, var(--primary-gold), #fff, var(--primary-gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .name-highlight {
+            font-size: 7rem;
+            color: var(--primary-gold);
+            text-shadow: 
+                0 0 20px var(--primary-gold),
+                0 0 40px rgba(255, 215, 0, 0.5),
+                0 0 60px rgba(255, 215, 0, 0.3);
+            margin: 30px 0;
+            font-weight: 900;
+            position: relative;
+            display: inline-block;
+            padding: 0 30px;
+        }
+
+        .name-highlight::before, .name-highlight::after {
+            content: "✧";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3rem;
+            color: var(--accent-pink);
+            animation: spin 10s linear infinite;
+        }
+
+        .name-highlight::before {
+            left: -10px;
+        }
+
+        .name-highlight::after {
+            right: -10px;
+        }
+
+        @keyframes spin {
+            100% { transform: translateY(-50%) rotate(360deg); }
+        }
+
+        .subtitle {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #e6e6ff;
+            line-height: 1.6;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .year-display {
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--primary-gold);
+            text-shadow: 
+                0 0 30px var(--primary-gold),
+                0 0 60px rgba(255, 215, 0, 0.5);
+            margin: 40px 0;
+            letter-spacing: 8px;
+            position: relative;
+            display: inline-block;
+            padding: 20px 60px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 30px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .countdown-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 60px 40px;
+            margin: 60px auto;
+            max-width: 1100px;
+            box-shadow: 
+                0 20px 50px rgba(0, 0, 0, 0.7),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .countdown-section::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary-gold), var(--accent-pink), var(--accent-purple), var(--primary-gold));
+            z-index: -1;
+            border-radius: 27px;
+            animation: borderGlow 3s linear infinite;
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 0.4; }
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--primary-gold);
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 30px;
+        }
+
+        .section-title::before, .section-title::after {
+            content: "✦";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: var(--accent-pink);
+        }
+
+        .section-title::before {
+            left: -10px;
+        }
+
+        .section-title::after {
+            right: -10px;
+        }
+
+        .countdown-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .countdown-card {
+            background: linear-gradient(145deg, rgba(26, 26, 58, 0.8), rgba(10, 10, 31, 0.9));
+            border-radius: 20px;
+            padding: 35px 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .countdown-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+            border-color: rgba(255, 215, 0, 0.5);
+        }
+
+        .countdown-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--accent-pink));
+        }
+
+        .countdown-value {
+            font-size: 5.5rem;
+            font-weight: 900;
+            color: var(--primary-gold);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+            margin-bottom: 10px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .countdown-label {
+            font-size: 1.8rem;
+            color: #e6e6ff;
+            letter-spacing: 1px;
+        }
+
+        .message-section {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 60px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(233, 30, 99, 0.05));
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .message-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffd700' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .personal-message {
+            font-size: 1.9rem;
+            line-height: 1.9;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .personal-message p {
+            margin-bottom: 30px;
+        }
+
+        .signature {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            text-align: left;
+            margin-top: 50px;
+            font-family: 'Dancing Script', cursive;
+            direction: ltr;
+            font-style: italic;
+        }
+
+        .special-button {
+            display: block;
+            margin: 60px auto;
+            background: linear-gradient(45deg, var(--primary-gold), var(--accent-pink), var(--primary-gold));
+            background-size: 200% 200%;
+            border: none;
+            color: #0a0a1f;
+            font-size: 1.8rem;
+            font-weight: 800;
+            padding: 25px 60px;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 
+                0 15px 35px rgba(255, 215, 0, 0.4),
+                0 5px 15px rgba(233, 30, 99, 0.3);
+            position: relative;
+            overflow: hidden;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .special-button:hover {
+            transform: scale(1.08);
+            box-shadow: 
+                0 25px 50px rgba(255, 215, 0, 0.6),
+                0 10px 25px rgba(233, 30, 99, 0.5);
+        }
+
+        .special-button i {
+            margin: 0 15px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 50px 0 30px;
+            margin-top: 80px;
+            color: #aaa;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .footer::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+        }
+
+        /* تأثيرات خاصة */
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 24px;
+            color: var(--accent-pink);
+            opacity: 0.7;
+            animation: floatHeart 15s linear infinite;
+        }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .gold-particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: var(--primary-gold);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 2;
+            box-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        .name-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            z-index: 0;
+            font-size: 300px;
+            font-weight: 900;
+            color: var(--primary-gold);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        /* التأقلم مع الشاشات الصغيرة */
+        @media (max-width: 1200px) {
+            .countdown-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .main-title {
+                font-size: 4.5rem;
+            }
+            
+            .name-highlight {
+                font-size: 5.5rem;
+            }
+            
+            .year-display {
+                font-size: 6rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .countdown-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-title {
+                font-size: 3.2rem;
+            }
+            
+            .name-highlight {
+                font-size: 4rem;
+            }
+            
+            .year-display {
+                font-size: 4.5rem;
+                padding: 15px 30px;
+            }
+            
+            .countdown-value {
+                font-size: 4.5rem;
+            }
+            
+            .personal-message {
+                font-size: 1.6rem;
+            }
+            
+            .message-section {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- خلفية اسم زينب -->
+    <div class="name-background">زينب</div>
+    
+    <!-- قلوب طافية -->
+    <div class="floating-hearts" id="heartsContainer"></div>
+    
+    <!-- الجسيمات الذهبية -->
+    <div id="particlesContainer"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">تهنئة فخمة بمناسبة رأس السنة الميلادية</h1>
+            <div class="decorative-border"></div>
+            <div class="name-highlight">زينب</div>
+            <div class="subtitle">كل عام وأنتِ رمز الجمال والأناقة، نبع العطاء والإلهام، وقلب يضيء الدنيا ببهائه</div>
+            <div class="year-display" id="yearDisplay">2024</div>
+            <div class="decorative-border"></div>
+        </header>
+        
+        <section class="countdown-section">
+            <h2 class="section-title">العد التنازلي لبداية العام الجديد</h2>
+            <div class="countdown-grid" id="countdownGrid">
+                <div class="countdown-card">
+                    <div class="countdown-value" id="days">00</div>
+                    <div class="countdown-label">أيام</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-value" id="hours">00</div>
+                    <div class="countdown-label">ساعات</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-value" id="minutes">00</div>
+                    <div class="countdown-label">دقائق</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-value" id="seconds">00</div>
+                    <div class="countdown-label">ثواني</div>
+                </div>
+            </div>
+        </section>
+        
+        <button class="special-button" id="magicButton">
+            <i class="fas fa-gift"></i> مفاجأة خاصة لزينب <i class="fas fa-gift"></i>
+        </button>
+        
+        <section class="message-section">
+            <div class="personal-message">
+                <p>عزيزتي <strong>زينب</strong>،</p>
+                <p>بمناسبة رأس السنة الميلادية، أود أن أبعث إليك بأصدق التهاني وأطيب التمنيات. كل عام وأنتِ أجمل، أرقى، وأسعد.</p>
+                <p>أتمنى أن يكون العام الجديد بداية رحلة جديدة مليئة بالإنجازات، النجاحات، واللحظات السعيدة التي تليق بشخصك الراقي.</p>
+                <p>ليحمل لكِ كل أحلامكِ وأمنياتكِ، وليكن عامًا تتحقق فيه كل طموحاتك، وتشرق فيه أيامكِ بأجمل الابتسامات.</p>
+                <p>دامت سعادتكِ، ودام بهاؤكِ، ودامت أناقتكِ التي تضيء كل من حولك.</p>
+                
+                <div class="signature">بكل الحب والتقدير</div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>تم تصميم هذه التهنئة خصيصًا لزينب بمناسبة رأس السنة الميلادية 2024</p>
+            <p>كل عام وأنتِ بألف خير ✨🌟🎉</p>
+            <div style="margin-top: 25px; font-size: 1.8rem; color: var(--primary-gold);">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-heart" style="color: var(--accent-pink); margin: 0 15px;"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // إنشاء القلوب الطافية
+        function createHearts() {
+            const heartsContainer = document.getElementById('heartsContainer');
+            const heartCount = 25;
+            
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤';
+                
+                // توزيع عشوائي
+                heart.style.left = `${Math.random() * 100}%`;
+                heart.style.fontSize = `${Math.random() * 20 + 15}px`;
+                
+                // تأخيرات متباينة للحركة
+                heart.style.animationDelay = `${Math.random() * 15}s`;
+                heart.style.animationDuration = `${Math.random() * 10 + 10}s`;
+                
+                heartsContainer.appendChild(heart);
+            }
+        }
+        
+        // إنشاء جسيمات ذهبية
+        function createParticles() {
+            const particlesContainer = document.getElementById('particlesContainer');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                setTimeout(() => {
+                    const particle = document.createElement('div');
+                    particle.classList.add('gold-particle');
+                    
+                    // وضع عشوائي
+                    particle.style.left = `${Math.random() * 100}%`;
+                    particle.style.top = `${Math.random() * 100}%`;
+                    
+                    particlesContainer.appendChild(particle);
+                    
+                    // حركة الجسيمات
+                    animateParticle(particle);
+                }, i * 200);
+            }
+        }
+        
+        function animateParticle(particle) {
+            let x = parseFloat(particle.style.left);
+            let y = parseFloat(particle.style.top);
+            let dx = (Math.random() - 0.5) * 0.5;
+            let dy = (Math.random() - 0.5) * 0.5;
+            
+            function move() {
+                x += dx;
+                y += dy;
+                
+                // ارتداد من الحواف
+                if (x <= 0 || x >= 100) dx = -dx;
+                if (y <= 0 || y >= 100) dy = -dy;
+                
+                particle.style.left = `${x}%`;
+                particle.style.top = `${y}%`;
+                
+                // تغيير الشفافية
+                particle.style.opacity = 0.3 + 0.5 * Math.sin(Date.now() / 1000);
+                
+                requestAnimationFrame(move);
+            }
+            
+            move();
+        }
+        
+        // العد التنازلي لرأس السنة
+        function updateCountdown() {
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            const nextYear = currentYear + 1;
+            const newYearDate = new Date(`January 1, ${nextYear} 00:00:00`);
+            
+            // تحديث عرض السنة
+            document.getElementById('yearDisplay').textContent = nextYear;
+            
+            const timeDiff = newYearDate - now;
+            
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // إذا وصلنا إلى رأس السنة
+            if (timeDiff < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdownGrid').innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; padding: 50px;">
+                        <div style="font-size: 4rem; color: #FFD700; margin-bottom: 20px;">🎉🎊</div>
+                        <div style="font-size: 3.5rem; color: #FFD700;">سنة ميلادية سعيدة زينب!</div>
+                        <div style="font-size: 2rem; margin-top: 30px;">كل عام وأنتِ بألف خير</div>
+                    </div>
+                `;
+                launchCelebration();
+            }
+        }
+        
+        // احتفال عند وصول رأس السنة
+        function launchCelebration() {
+            // إضافة المزيد من الجسيمات
+            for (let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    createParticles();
+                }, i * 50);
+            }
+            
+            // تغيير لون الخلفية
+            document.body.style.background = "linear-gradient(135deg, #0a0a1f, #9c27b0, #0a0a1f)";
+            
+            // عرض رسالة تهنئة
+            const messageSection = document.querySelector('.message-section');
+            const newMessage = document.createElement('div');
+            newMessage.innerHTML = `
+                <div style="text-align: center; padding: 30px; background: rgba(255,215,0,0.1); border-radius: 20px; margin-top: 40px; border: 2px solid #FFD700;">
+                    <div style="font-size: 3rem; color: #FFD700; margin-bottom: 20px;">🎆 عام سعيد يا زينب! 🎇</div>
+                    <div style="font-size: 1.8rem;">كل عام وأنتِ أكثر جمالاً ونجاحاً وإشراقاً</div>
+                </div>
+            `;
+            messageSection.appendChild(newMessage);
+        }
+        
+        // زر المفاجأة الخاصة
+        document.getElementById('magicButton').addEventListener('click', function() {
+            const button = this;
+            
+            // تعطيل الزر مؤقتًا
+            button.disabled = true;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري التحضير لمفاجأتك...';
+            
+            // بعد 1.5 ثانية
+            setTimeout(() => {
+                // إنشاء عرض خاص
+                createSpecialEffect();
+                
+                // تغيير نص الزر
+                button.innerHTML = '<i class="fas fa-crown"></i> كل عام وأنتِ ملكة يا زينب <i class="fas fa-crown"></i>';
+                button.style.background = "linear-gradient(45deg, #9c27b0, #e91e63, #9c27b0)";
+                
+                // إنشاء رسالة خاصة
+                const specialMessage = document.createElement('div');
+                specialMessage.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(10, 10, 31, 0.95);
+                    padding: 40px;
+                    border-radius: 25px;
+                    border: 3px solid #FFD700;
+                    box-shadow: 0 0 50px rgba(255, 215, 0, 0.7);
+                    z-index: 1000;
+                    max-width: 90%;
+                    width: 600px;
+                    text-align: center;
+                `;
+                specialMessage.innerHTML = `
+                    <div style="font-size: 2.8rem; color: #FFD700; margin-bottom: 20px;">مفاجأة خاصة لزينب ✨</div>
+                    <div style="font-size: 1.8rem; line-height: 1.6; margin-bottom: 30px;">
+                        هذه التهنئة خصيصًا لكِ لأنكِ تستحقين الأجمل دائمًا. 
+                        أتمنى أن يكون العام الجديد بداية رحلة نجاح جديدة، 
+                        وحكاية سعادة لا تنتهي، وقصة نجاح تتوج بإنجازاتكِ الرائعة.
+                    </div>
+                    <div style="font-size: 4rem; color: #e91e63; margin: 20px 0;">❤️</div>
+                    <button id="closeMessage" style="background: #FFD700; color: #0a0a1f; border: none; padding: 15px 40px; border-radius: 50px; font-size: 1.3rem; font-weight: bold; cursor: pointer; margin-top: 20px;">
+                        شكرًا 💝
+                    </button>
+                `;
+                
+                document.body.appendChild(specialMessage);
+                
+                // إضافة حدث إغلاق الرسالة
+                document.getElementById('closeMessage').addEventListener('click', function() {
+                    specialMessage.remove();
+                    button.innerHTML = '<i class="fas fa-gift"></i> مفاجأة خاصة لزينب <i class="fas fa-gift"></i>';
+                    button.disabled = false;
+                    button.style.background = "linear-gradient(45deg, var(--primary-gold), var(--accent-pink), var(--primary-gold))";
+                });
+            }, 1500);
+        });
+        
+        // تأثير خاص عند النقر على الزر
+        function createSpecialEffect() {
+            // إنشاء نجوماً حول الزر
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const star = document.createElement('div');
+                    star.style.cssText = `
+                        position: fixed;
+                        width: 20px;
+                        height: 20px;
+                        background: #FFD700;
+                        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                        z-index: 100;
+                        pointer-events: none;
+                    `;
+                    
+                    // وضع عشوائي حول الزر
+                    const buttonRect = document.getElementById('magicButton').getBoundingClientRect();
+                    const angle = Math.random() * Math.PI * 2;
+                    const radius = 100;
+                    const x = buttonRect.left + buttonRect.width/2 + Math.cos(angle) * radius;
+                    const y = buttonRect.top + buttonRect.height/2 + Math.sin(angle) * radius;
+                    
+                    star.style.left = `${x}px`;
+                    star.style.top = `${y}px`;
+                    
+                    document.body.appendChild(star);
+                    
+                    // حركة النجم
+                    animateStar(star, angle);
+                }, i * 50);
+            }
+        }
+        
+        function animateStar(star, angle) {
+            let x = parseFloat(star.style.left);
+            let y = parseFloat(star.style.top);
+            let radius = 100;
+            let scale = 1;
+            
+            function move() {
+                radius += 5;
+                scale -= 0.05;
+                
+                x += Math.cos(angle) * 5;
+                y += Math.sin(angle) * 5;
+                
+                star.style.left = `${x}px`;
+                star.style.top = `${y}px`;
+                star.style.transform = `scale(${scale})`;
+                star.style.opacity = scale;
+                
+                if (scale > 0) {
+                    requestAnimationFrame(move);
+                } else {
+                    star.remove();
+                }
+            }
+            
+            move();
+        }
+        
+        // تهيئة الصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            createHearts();
+            createParticles();
+            updateCountdown();
+            
+            // تحديث العد التنازلي كل ثانية
+            const countdownInterval = setInterval(updateCountdown, 1000);
+            
+            // إضافة جسيمات جديدة كل 10 ثوان
+            setInterval(createParticles, 10000);
+        });
+    </script>
+</body>
+</html>
